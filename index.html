@@ -259,7 +259,21 @@
     <h2>Ques. 11 .  Birthday Game</h2>
     <div class="code">
     <pre>
-
+      function Birthday_Game(arr,D ,M) {
+ 
+        let count = 0;
+        for (let i=0; i<=arr.length-M; i++)
+        {
+          let sum = 0;
+          for (let j=i; j<M+i; j++){    
+            sum = sum + arr[j];
+          }
+          if (sum ===D){
+            count++;
+          }
+        }
+        return count;
+      }
 
     </pre>
     </div>
