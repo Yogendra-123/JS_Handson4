@@ -217,7 +217,14 @@
     <h2>Ques. 9 . Unique Color Shirt</h2>
     <div class="code">
       <pre>
+        function Unique_Shirts (arr,N) 
+        {
 
+          const copyArr = [...arr];
+          const distinctColors = arr.filter( color => arr.indexOf(color) === arr.lastIndexOf(color));
+          return distinctColors.length;
+          
+        }
 
     </pre>
     </div>
